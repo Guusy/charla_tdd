@@ -1,0 +1,35 @@
+TDD Notes :
+
+Es un herramienta mas, lo importante es el como , el cuando y el que.
+
+Partes del test ? (pregunta al publico)
+
+- Nombres claros que indiquen las 3 cosas (precondiciones, operacion y un resultado)
+
+- clases de equivalencias, casos de uso de tu codigo
+
+unitarios -> prueban una sola entidad o solo objeto o funcion y son los mas sencillos y mas rapidos, son la base de la bateria de test
+
+integracion ->  como funcionan diferentes abstracciones entre si
+
+funcionales -> e2e :D
+
+Ventajas
+- Generan oportunidades para refactors
+- Te genera curiosidad de los uso (podes preguntar a ux casos de equivalencias que despues son potenciales a salir en una demo)
+
+TDD metodologia :
+ - test que falle
+ - codigo mas simple para que el test pase (unico objetivo) 
+ - (posible refactor)
+ - ver el test pasar ( optional : commit )
+
+Los test son cohesivos y chicos.
+
+Tips:
+
+- No adelantar refactors.
+- Si hacemos un test y da verde de una, entonces nos adelantamos.
+- Hacer commits chicos (cada 5 min), nos deja entender cuando se introduce un bug 
+- Representar contexto o precondiciones con codigo. (si tenemos contexto vacio es un bad smell)
+- Testear errores
