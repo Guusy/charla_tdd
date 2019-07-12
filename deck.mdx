@@ -5,6 +5,7 @@ import {
   Horizontal,
   FullScreenCode,
 } from '@mdx-deck/layouts'
+export { default as theme } from './theme'
 
 import { Appear } from 'mdx-deck'
 
@@ -27,7 +28,7 @@ import { Notes } from 'mdx-deck'
 
 <Appear>
 
-#### Gonzalo gras cantou 
+#### Gonzalo gras cantou (Guusy)
 #### 22 años 
 #### Mercadolibre  
 #### :dog: :dog: :dog: :dog:
@@ -60,13 +61,13 @@ Que tanto me creerian si les digo que existe una manera de no tener mas bugs par
 ---
 <Invert>
 
-![](./src/gifs/magic.gif)
+<img src="/src/gifs/magic.gif"  width="700"/>
 
 </Invert>
 
 ---
 <h4 style={{textAlign:"start"}}> TDD es </h4>
-![](./src/images/tdd_cycle.png)
+<img src="/src/images/tdd_cycle.png"  width="1000"/>
 
 <Notes>
 Es un herramienta, una manera de desarollar, que esta orientada a los test.
@@ -78,13 +79,41 @@ Es un herramienta, una manera de desarollar, que esta orientada a los test.
 </Notes>
 
 ---
-## Ventajas
-- Codigo 100% testeado
-- No bugs :heart:
-- Codigo abierto a refactors totalmente
-
+## ¿ Por que TDD ?
 ---
 
+### Codigo 100% testeado
+<Appear>
+
+### No bugs 
+### Codigo abierto a refactors totalmente 
+### Mejores tests 
+### Feedback inmediato 
+### Documentación automatica 
+
+<Notes>
+Desarrollo orientado al diseño (Simplicidad. Evitar sobre diseños. Interfaces amigables)
+Queda mas simple el diseño y por que empezamos a diseñar pensando en la interfaz y
+como queremos que contesten nuestros componente, por que el primer usuario del componente vamos a hacer nosotros,
+mientras codeamos el test nos damos cuenta que tan facil es usarlo
+
+Mejores tests (Tests cohesivos. Más rápidos. Evitamos tests redundantes y código sin testear) 
+Tiene una sola responsabilidad, nos permite entender mejor cuando algo falla, por que fallo. Evitamos test redundantes y
+ codigo sin testear. si hacemos un test y da verde entonces nos adelantamos, o estamos probando algo que ya esta resuelto
+
+Feedback inmediato (De requerimientos, implementación y diseño) Al estar pensando en las diferentes clases de equivalencias, 
+nos damos cuenta de los casos que no estan la definicion funcional y eso es super valioso por que podemos levantar la mano en el medio del desarollo y
+decir "Aca nos esta faltando algo" y que esto dispare una charla con ux o con producto para  poder ver ese caso, es una forma de retroalimentarse
+
+Documentación actualizada (bueno para usuarios de nuestro proyecto, programadores nuevos, y para el code review)
+Es la mejor Documentación del codigo ya que basicamente es lo que corre y da verde <3, si le metemos cabeza para que sean faciles de leer, uno puede entrar y ver 
+</Notes>
+
+</Appear>
+
+
+
+---
 ## Buenas practicas
 <div style={{textAlign:"start"}}>
 <Appear>
@@ -97,3 +126,31 @@ Es un herramienta, una manera de desarollar, que esta orientada a los test.
 
 </Appear>
 </div>
+
+---
+
+#### 100% DE COBERTURA !== ESTA TODO TESTEADO
+
+---
+# Workshop 
+<img  src="https://media.giphy.com/media/RRerwvHrb0nxm/giphy-downsized.gif"  width="700"/>
+
+---
+# ¿Que vamos a hacer?
+# :tada:
+
+---
+<Invert>
+<img src="src/gifs/demo_component.gif"  width="500"/>
+<Notes>
+La idea de es hacer un calendario con ciertas features
+<br/>
+Aclarar que lo mas seguro es que no se llegue a todo lo especificado, pero esta el github para seguir trabajando en casa
+</Notes>
+</Invert>
+
+---
+
+<Invert>
+<h2>https://github.com/Guusy/tdd_workshop</h2>
+</Invert>
