@@ -25,7 +25,7 @@ import { Notes } from 'mdx-deck'
 ![](./src/images/bar.png)
 
 ## Quien soy ?
-
+## TODO : redes !
 <Appear>
 
 #### Gonzalo gras cantou (Guusy)
@@ -50,10 +50,18 @@ import { Notes } from 'mdx-deck'
 
 ---
 
+# Partes del test
+
+![](./src/images/test_part.png)
+
+---
+
 # ¿Qué es TDD?
 
 <Notes>
 Preguntar : Cuantos trabajan programando o estan arrancando.
+Preguntar : si alguien conoce tdd o lo uso ?
+
 <br/>
 Que tanto me creerian si les digo que existe una manera de no tener mas bugs para siempre y gratis?
 </Notes>
@@ -71,11 +79,18 @@ Que tanto me creerian si les digo que existe una manera de no tener mas bugs par
 
 <Notes>
 Es un herramienta, una manera de desarollar, que esta orientada a los test.
+Preguntar: por que es importante el test fallar ?
+- Explicar por que es importante ver el test fallar (falsos positivos, test que pasan de una)
+imaginense que estan haciendo el test y no conocen bien la herramienta, y no se da cuenta
+que escribrimos el test.
+- Explicar por que los commits ! (mas facil debug) (pasito a pasito)
+- El minimo codigo para hacer que el test pase, codigo simple
 <br/>
 1) Test que falle <br/>
 2) codigo mas simple para que el test pase (unico objetivo) <br/>
-3) (posible refactor) <br/>
-4) ver el test pasar ( optional : commit ) <br/>
+3) ver el test pasar ( ortodoxo : commit ) <br/>
+4) (posible refactor) <br/>
+
 </Notes>
 
 ---
@@ -95,7 +110,7 @@ Ademas vemos como queremos que contesten nuestros componentes y mientras codeamo
 ## Mejora la calidad de tests
 <Notes>
 
-- Tests cohesivos,con una sola responsabilidad, que nos permite entender mejor cuando algo falla, por que fallo. 
+- Tests cohesivos (que es ?),con una sola responsabilidad, que nos permite entender mejor cuando algo falla, por que fallo. 
 
 - Evitamos tests redundantes (mejores contextos)
 
@@ -104,11 +119,13 @@ Ademas vemos como queremos que contesten nuestros componentes y mientras codeamo
 </Notes>
 
 ---
+
 <Invert>
 
 ## Feedback inmediato 
 <Notes>
-Al estar pensando en las diferentes clases de equivalencias: 
+
+Al estar pensando en los diferentes casos: 
 
 - Nos damos cuenta de los casos que no estan la definicion funcional
 - Super valioso por que podemos levantar la mano en el medio del desarollo y decir "Aca nos esta faltando algo" y que esto dispare una charla con ux o con producto para  poder ver ese caso, es una forma de retroalimentarse
@@ -120,53 +137,94 @@ Al estar pensando en las diferentes clases de equivalencias:
 ---
 ## Documentación automatica 
 <Notes>
-
+- Preguntar: quien le gusta escribir documentación ? Que pasa con la doc ?
 - Bueno para usuarios de nuestro proyecto, programadores nuevos, y para el code review
 - Es la documentación del codigo mas actualizada.
-- Si escribimos buenos contextos, uno puede entrar y entender que hace el codigo
-
+- Lo importante es escribir test con buena calidad.
 </Notes>
 
 ---
 
 <Invert>
 
-## Codigo 100% testeado ( no bugs :heart: )
+## Codigo 100% testeado
 
 <Notes>
 
 - Ya que que esta metolodogia se basa en escribir los tests antes de implementar, vamos a tener si o si el 100% de nuestro codigo testeado
+- Que pasa si tienen un muerto,sin test ? 
 
 </Notes>
 </Invert>
 
 ---
 
-## No mas miedo a los refactors  
+## No mas miedo
 
 <Notes>
-
+- A los refactors.
+- A agregar nuevas features.
 - Al tener todos nuestros caso de usos testeados, nos da la completa libertad de poder refactorizar el codigo a gusto
 
 </Notes>
 
 ---
+
 ## Buenas practicas
-<div style={{textAlign:"start"}}>
-<Appear>
 
-- Evitar la ansiedad. No adelantar refactors
-- 5 minutes commit
-- Representar bien los contextos
-- Testear errores
-- Hacer tdd al corregir bugs
+---
 
-</Appear>
-</div>
+## 5 minutes commit
+<Notes>
+
+</Notes>
+
+---
+
+## Representar bien los contextos
+
+---
+
+## Evitar la ansiedad, No adelantar refactors
+<Notes>
+
+</Notes>
+
+---
+
+## Testear errores y la invariancia
+<Notes>
+Excepcion y que pasa en nuestro dominio luego de eso ?  el estado
+</Notes>
+
+
+---
+
+## Hacer tdd al corregir bugs
+
+---
+
+## COBERTURA
+<Notes>
+- Preguntar que es la corbertura para la people ?  o que concepto tienen de ella ?
+- Es lo mismo que todo el codigo testeado ?  se puede confiar ?
+
+</Notes>
+
+---
+
+# TODO: CODIGO LOCO
 
 ---
 
 #### 100% DE COBERTURA !== ESTA TODO TESTEADO
+<Notes>
+- Poner codigo, q recorra todo el codigo.
+</Notes>
+
+---
+
+# ¿ Preguntas ?
 
 ---
 # Workshop 
@@ -177,6 +235,12 @@ Al estar pensando en las diferentes clases de equivalencias:
 # :tada:
 
 ---
+
+# TODO: Wallet 
+¿ Que pasa si se pasa un monto negativo ? tanto en debito como en credito
+
+---
+
 <Invert>
 <img src="src/gifs/demo_component.gif"  width="500"/>
 <Notes>
