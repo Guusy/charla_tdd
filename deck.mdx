@@ -11,6 +11,8 @@ import { Appear } from 'mdx-deck'
 
 import { Notes } from 'mdx-deck'
 
+
+
 <Invert>
 
 # Hola !
@@ -25,7 +27,7 @@ import { Notes } from 'mdx-deck'
 ![](./src/images/bar.png)
 
 ## Quien soy ?
-## TODO : redes !
+
 <Appear>
 
 #### Gonzalo gras cantou (Guusy)
@@ -42,7 +44,6 @@ import { Notes } from 'mdx-deck'
 <br/>
 - Tengo 4 perros y los amo mucho
 </Notes>
-
 </Appear>
 
 </Split>
@@ -53,6 +54,14 @@ import { Notes } from 'mdx-deck'
 # Partes del test
 
 ![](./src/images/test_part.png)
+
+<Notes>
+
+- Precondicion : Escenario.
+- Operacion : la funcionalidad ejecutandose.
+- Postcondicion : Lo que se espera que devuelva o que afecte a otros componentes.
+
+</Notes>
 
 ---
 
@@ -80,25 +89,19 @@ Que tanto me creerian si les digo que existe una manera de no tener mas bugs par
 <Notes>
 Es un herramienta, una manera de desarollar, que esta orientada a los test.
 Preguntar: por que es importante el test fallar ?
-- Explicar por que es importante ver el test fallar (falsos positivos, test que pasan de una)
-imaginense que estan haciendo el test y no conocen bien la herramienta, y no se da cuenta
-que escribrimos el test.
+
+- Ver el test fallar (falsos positivos, test que pasan de una)
 - Explicar por que los commits ! (mas facil debug) (pasito a pasito)
 - El minimo codigo para hacer que el test pase, codigo simple
-<br/>
-1) Test que falle <br/>
-2) codigo mas simple para que el test pase (unico objetivo) <br/>
-3) ver el test pasar ( ortodoxo : commit ) <br/>
-4) (posible refactor) <br/>
 
 </Notes>
 
 ---
-## ¿ Por que TDD ?
+## ¿ Por que TDD ? :smile:
 ---
 <Invert>
 
-## Mejora en la calidad de diseño
+## Calidad de diseño
 <Notes>
 El diseño queda mas simple ya que como nosotros somos los primeros usuarios de nuestro codigo, esto genera una interfaz amigable.
 Ademas vemos como queremos que contesten nuestros componentes y mientras codeamos el test nos damos cuenta que tan facil es usarlo
@@ -170,25 +173,32 @@ Al estar pensando en los diferentes casos:
 
 ---
 
-## Buenas practicas
+## Buenas practicas :100:
 
 ---
+
+<Invert>
 
 ## 5 minutes commit
 <Notes>
 
 </Notes>
 
+</Invert>
+
 ---
 
 ## Representar bien los contextos
 
 ---
+<Invert>
 
 ## Evitar la ansiedad, No adelantar refactors
 <Notes>
 
 </Notes>
+
+</Invert>
 
 ---
 
@@ -199,8 +209,11 @@ Excepcion y que pasa en nuestro dominio luego de eso ?  el estado
 
 
 ---
+<Invert>
 
 ## Hacer tdd al corregir bugs
+
+</Invert>
 
 ---
 
@@ -213,7 +226,33 @@ Excepcion y que pasa en nuestro dominio luego de eso ?  el estado
 
 ---
 
-# TODO: CODIGO LOCO
+<Invert>
+
+<Split>
+
+```js
+const readABook = (user, book) => {
+    book.actualLector = user
+    user.readBooks.push(book)
+}
+```
+
+```
+describe('when a user reads a books', () => {
+
+    beforeEach(() => {
+        readABook(user, book)
+    })
+    
+    it('marks the user as actualLector in book', () => {
+        expect(book.actualLector).toEqual(user)
+    })
+})
+```
+
+</Split>  
+
+</Invert>
 
 ---
 
@@ -221,6 +260,10 @@ Excepcion y que pasa en nuestro dominio luego de eso ?  el estado
 <Notes>
 - Poner codigo, q recorra todo el codigo.
 </Notes>
+
+---
+
+![](./src/images/chose_way.jpeg)
 
 ---
 
@@ -236,8 +279,7 @@ Excepcion y que pasa en nuestro dominio luego de eso ?  el estado
 
 ---
 
-# TODO: Wallet 
-¿ Que pasa si se pasa un monto negativo ? tanto en debito como en credito
+# Wallet 
 
 ---
 

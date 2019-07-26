@@ -18,3 +18,18 @@ describe('when the user has permissions to read secret files', () => {
         })
     })
 })
+
+
+const readABook = (user, book) => {
+    book.actualLector = user
+    user.readBooks.push(book)
+}
+
+describe('when a user reads a books', () => {
+    beforeEach(() => {
+        readABook(user, book)
+    })
+    it('marks the user as actualLector in book', () => {
+        expect(book.actualLector).toEqual(user)
+    })
+})
