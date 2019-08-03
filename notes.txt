@@ -67,7 +67,7 @@ Tips:
 Cuando NO usar tdd
 
 Problemas que involucran entidades externas
-Documentación anticuada. Tecnología críptica. Mucho overhead para hacer un test (mocks). Incertidumbre sobre la correctitud del sistema externo.
+-Documentación anticuada. Tecnología críptica. Mucho overhead para hacer un test (mocks). Incertidumbre sobre la correctitud del sistema externo.
 
 
 Sistema legacy sin tests
@@ -88,3 +88,25 @@ y cambiar el codigo ya a va a dejar de ser un miedo de romper lo que esta produc
 Con practica el proceso se empieza a hacer mas rapido, alprincipio el lento ya aburrido, pero despues se notan los frutos
 
 Lo ideal que despues de esta charla, tdd es una herramienta mas, por lo menos que la prueben y que evaluen como le va, las cosas nuevas nos generan resistencia.
+
+
+---------------------
+
+
+
+Hacer test de monto negativo !
+
+Poner mas dibujos en las ppts.
+
+que pasa si tenemos 2 equipos trabajando sobre la misma feature ?
+si la funcionalidad que estamos codeando se choca con otra
+
+- Aclarar el tema de tipado y de no tipado en el medio del workshop !
+
+- Hablar sobre la importancia de los test, agregar ppts el caso del cohete a la luna y con radiacion
+
+- Mirar a todas las personas también, no olvidarse de los que están remotos
+- Cuando estés más cómodo si te animás podés hacerlo más improvisado, para que no sientan que está todo muy guiado 
+y genere más engagement 
+
+- Hacer participar mas a la gente, con mejores preguntas
