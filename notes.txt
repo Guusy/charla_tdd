@@ -110,3 +110,31 @@ si la funcionalidad que estamos codeando se choca con otra
 y genere más engagement 
 
 - Hacer participar mas a la gente, con mejores preguntas
+
+
+Hoy les vengo a hablar TDD, pero antes me gustaria hablar un poco sobre los test.
+
+Todos saben lo que es un test ?
+Basicamente es codigo que chequea que nuestro codigo funcione AJAJAJA
+
+Y por que son importante los test ?
+Caso de radiacion y caso de cohete a la luna
+
+Partes de un test.
+
+TDD explicacion:
+
+explicar que es un ciclo sin fin
+ 
+especificacion:
+1 )  por que es importante que de rojo, y ver que pase eso. y no simplemente ir a codear la funcionalidad y que de verde ?
+    Tambien para darte cuenta si escribiste bien el test, si esta testeando lo que queremos.
+
+2 )  Codigo minimo
+    Buscar algun ejemplo: Una funcion que nos retorne si un valor es un numero !
+
+3 ) Por que despues de dar verde hacer un commit ? 
+    Nos queda una historia mas descriptiva
+
+
+Buscar la manera de hablar un poco de si te lleva mas tiempo TDD de codear, pero que es una inversion a futuro !

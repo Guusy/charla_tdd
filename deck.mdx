@@ -53,7 +53,7 @@ import { Notes } from 'mdx-deck'
 
 # Partes del test
 
-![](./src/images/test_part.png)
+<img src="./src/images/test_part.png"  width="900"/>
 
 <Notes>
 
@@ -103,14 +103,15 @@ Preguntar: por que es importante el test fallar ?
 
 ## Calidad de diseño
 <Notes>
-El diseño queda mas simple ya que como nosotros somos los primeros usuarios de nuestro codigo, esto genera una interfaz amigable.
-Ademas vemos como queremos que contesten nuestros componentes y mientras codeamos el test nos damos cuenta que tan facil es usarlo
+- El diseño queda mas simple ya que como nosotros somos los primeros usuarios de nuestro codigo, esto genera una interfaz amigable.
+- Ademas vemos como queremos que contesten nuestros componentes y que mensajes queremos que entienda, nos damos cuenta que tan facil es usarlo.
+- Vamos diseñando mientras codeamos
 </Notes>
 </Invert>
 
 ---
 
-## Mejora la calidad de tests
+## Calidad de tests
 <Notes>
 
 - Tests cohesivos (que es ?),con una sola responsabilidad, que nos permite entender mejor cuando algo falla, por que fallo. 
@@ -132,6 +133,10 @@ Al estar pensando en los diferentes casos:
 
 - Nos damos cuenta de los casos que no estan la definicion funcional
 - Super valioso por que podemos levantar la mano en el medio del desarollo y decir "Aca nos esta faltando algo" y que esto dispare una charla con ux o con producto para  poder ver ese caso, es una forma de retroalimentarse
+- Antes que salte en una demo y en produccion
+- Le da mucho valor al negocio
+- Por que les parece que esto es posible ?  
+- por que cuando escribimos los test nos podemos dar cuenta de los diferentes escenarios ?
 
 </Notes>
 
@@ -144,6 +149,8 @@ Al estar pensando en los diferentes casos:
 - Bueno para usuarios de nuestro proyecto, programadores nuevos, y para el code review
 - Es la documentación del codigo mas actualizada.
 - Lo importante es escribir test con buena calidad.
+- En los contexto podemos ver como armar un componente 
+
 </Notes>
 
 ---
@@ -167,7 +174,7 @@ Al estar pensando en los diferentes casos:
 <Notes>
 - A los refactors.
 - A agregar nuevas features.
-- Al tener todos nuestros caso de usos testeados, nos da la completa libertad de poder refactorizar el codigo a gusto
+- Al tener todos nuestros caso de usos testeados, nos da la completa libertad de poder refactorizar el codigo a gusto.
 
 </Notes>
 
@@ -180,7 +187,11 @@ Al estar pensando en los diferentes casos:
 <Invert>
 
 ## 5 minutes commit
+
 <Notes>
+- No hacer funcionalidades muy grandes
+- El historial super limpio
+- Test mas chiquitos, legibles y mas mantenibles
 
 </Notes>
 
@@ -189,13 +200,19 @@ Al estar pensando en los diferentes casos:
 ---
 
 ## Representar bien los contextos
+<Notes>
+- No duplicar contextos
+- No tener contextos vacios
+- Reprensentar el contexto con codigo, nos habla de como armar estos contextos, nos sirve de documentación
+</Notes>
 
 ---
 <Invert>
 
 ## Evitar la ansiedad, No adelantar refactors
-<Notes>
 
+<Notes>
+- No romper con la metolodogia, para tener todas las suites de tests.
 </Notes>
 
 </Invert>
@@ -203,8 +220,10 @@ Al estar pensando en los diferentes casos:
 ---
 
 ## Testear errores y la invariancia
+
 <Notes>
-Excepcion y que pasa en nuestro dominio luego de eso ?  el estado
+- Excepcion y que pasa en nuestro dominio luego de eso ?
+- que no tenga efecto en el estado
 </Notes>
 
 
@@ -217,9 +236,18 @@ Excepcion y que pasa en nuestro dominio luego de eso ?  el estado
 
 ---
 
+# Tipado VS no Tipado
+
+<Notes>
+- En los lenguajes sin tipo son muchisimo mas importante los test
+- En los que tienen tipo muchas veces nos ayuda el IDE
+</Notes>
+
+---
+
 ## COBERTURA
 <Notes>
-- Preguntar que es la corbertura para la people ?  o que concepto tienen de ella ?
+- Preguntar que es la cobertura para la people ?  o que concepto tienen de ella ?
 - Es lo mismo que todo el codigo testeado ?  se puede confiar ?
 
 </Notes>
@@ -259,11 +287,18 @@ describe('when a user reads a books', () => {
 #### 100% DE COBERTURA !== ESTA TODO TESTEADO
 <Notes>
 - Poner codigo, q recorra todo el codigo.
+- Ya no nos preocupamos por ella, este numero se va dar naturalmente
 </Notes>
 
 ---
 
 ![](./src/images/chose_way.jpeg)
+
+<Notes>
+- Hablar de que es una metolodogia mas.
+- TDD es una inversion
+
+</Notes>
 
 ---
 
