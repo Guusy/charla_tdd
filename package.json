@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx"
+    "build": "mdx-deck build deck.mdx && npm run assets",
+    "assets": "mkdir -p dist/src && cp -R src/ dist/"
   },
   "author": "",
   "license": "ISC",
